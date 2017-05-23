@@ -6,3 +6,112 @@ Colors:
 #75726C;
 #EDE9E2
 */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	background-color: #00B2A9;
+}
+/*BARRA DE NAVEGACIÓN*/
+header .nav-header{
+	background-color: #E54E79;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+.nav-header img{
+	width: 60px;
+	height: 45px;
+	padding: 10px;
+	position: fixed;
+	left: 170px;
+}
+.link a{
+	text-decoration: none;
+	color: whitesmoke;
+	display: inline-block;
+	width: 80px;	
+}
+.nav-link{
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: 20px;
+	right: 140px;
+}
+/*SECCION DE CONTENIDO*/
+.content img{
+	width: 100%;
+}
+.form{
+	width: 38%;
+	height: 385px;
+	background-color: #EDE9E2;
+	position: absolute;
+	top: 30%;
+	right: 0;
+}
+.box-text h1{
+	color: #00B2A9;
+	font-size: 1.7em;
+	position: absolute;
+	top: 60px;
+	left: 40px;
+}
+.box-text p{
+	position: absolute;
+	top: 110px;
+	left: 40px;
+	color: #75726C;
+}
+/*CAJA FORMULARIO*/
+.form-box{
+	position: absolute;
+	top: 150px;
+	left: 40px;
+}
+.form-box button{
+	background-color: #E56385;
+	color: whitesmoke;
+	border-radius: 15px;
+	width: 210px;
+	height: 40px;
+	margin: 15px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 10px 10px 0;
+}
+input[type="text"]{
+	border: none;
+	border-bottom: 1px solid #75726C;
+	background-color: #EDE9E2;
+	width: 400px;
+	padding: 10px 0;
+}
+.form-box input[type="text"]::-webkit-input-placeholder{ 
+	font-size: 1.2em;
+}
+i{
+	margin-left: 10px;
+}
+.text p{
+	margin: 260px 0 20px 40px;
+	line-height: 40px;
+}
+/*SECCION PLAY WITH LYFT*/
+.play-lyft h1{
+	color: #75726C;
+	font-size: 2.5em;
+	margin: 60px 0;
+	background-color: whitesmoke;
+	text-align: center;	
+	padding: 15px 0;
+}
+.form-play{	
+	margin: 60px;
+	background-color: #EDE9E2;	
+}
