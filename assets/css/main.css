@@ -34,13 +34,18 @@ header .nav-header{
 	text-decoration: none;
 	color: whitesmoke;
 	display: inline-block;
-	width: 80px;	
+	width: 80px;
+	margin: 0px;
+	padding: 20px;
+}
+.link a:hover{
+	background-color: rgba(193, 36, 0, 0.5);
+
 }
 .nav-link{
 	display: inline-block;
 	float: right;
 	position: relative;
-	top: 20px;
 	right: 140px;
 }
 /*SECCION DE CONTENIDO*/
@@ -80,7 +85,7 @@ header .nav-header{
 	border-radius: 15px;
 	width: 210px;
 	height: 40px;
-	margin: 15px 0;
+	margin: 30px 0;
 	font-weight: bold;
 	text-transform: uppercase;
 	padding: 10px 10px 10px 0;
@@ -91,6 +96,8 @@ input[type="text"]{
 	background-color: #EDE9E2;
 	width: 400px;
 	padding: 10px 0;
+	height: 30px;
+	font-size: 1.2em;
 }
 .form-box input[type="text"]::-webkit-input-placeholder{ 
 	font-size: 1.2em;
@@ -99,7 +106,7 @@ i{
 	margin-left: 10px;
 }
 .text p{
-	margin: 260px 0 20px 40px;
+	margin: 270px 0 20px 40px;
 	line-height: 40px;
 }
 /*SECCION PLAY WITH LYFT*/
@@ -137,18 +144,7 @@ i{
 .form-play input[type="text"]{
 	width: 320px;
 }
-#form2 .invalid1{
-	color: red;
-	position: relative;
-	bottom: 140px;
-	right: 255px;
-}
-#form2 .invalid2{
-	color: red;
-	position: relative;
-	bottom: 140px;
-	left: 118px;
-}
+/*style footer*/
 footer{
 	background-color: #75726C;
 	color: whitesmoke;
@@ -183,14 +179,14 @@ footer{
 	display: inline-block;
 	width: 45%;
 }
-
+/*play table*/
 .table{
 	background-color: whitesmoke;
 	margin: 20px 193px;
 	border: 50px solid whitesmoke;
 	top: 80px;
 	left: 400px;
-	display: block;
+	display: none;
 }
 .board{
 	width: 100%;
@@ -203,11 +199,58 @@ footer{
 	width: 10%;
 	height: 80px;
 	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+	left: 0%;
+	top: 0px;	
+}
+
+
+/*selector created by js*/
+#form2 .invalid1{
+	color: red;
+	position: relative;
+	bottom: 140px;
+	right: 255px;
+}
+#form2 .invalid2{
+	color: red;
+	position: relative;
+	bottom: 140px;
+	left: 118px;
 }
 .noShow{
 	display: none;
+}
+
+.noValid{
+	color: red;
+	position: absolute;
+	left: 0px;
+	margin-top: 5px;
+}
+.alert{
+	text-align: center;
+	z-index: 1;
+	position: fixed;
+	height: 340px;
+	width: 60%;
+	top: 120px;
+	left: 260px;
+	right: 50px;
+	bottom: 50px;
+	background-color: rgba(193, 217, 0, 0.7);
+	border-radius: 10px;
+}
+.alert input[type="button"]{
+	background-color: #00B2A9;
+	color: whitesmoke;
+	height: 30px;
+	width: 90px;
+	margin: 20px;
+	border-radius: 10px;
+}
+.alert p{
+	color: white;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	margin-top: 120px;
 }
