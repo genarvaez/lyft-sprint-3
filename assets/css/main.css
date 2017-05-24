@@ -107,6 +107,9 @@ i{
 	color: #75726C;
 	text-align: center;
 }
+.play-lyft{
+	position: relative;
+}
 .play-lyft h1{
 	color: #75726C;
 	font-size: 2.5em;
@@ -127,12 +130,24 @@ i{
 	border-radius: 15px;
 	background-color: #00B2A9;
 	height: 50px;
-	margin: 30px 30px 50px 30px;
+	margin: 50px 30px 50px 30px;
 	text-transform: uppercase;
 	color: whitesmoke;
 }
 .form-play input[type="text"]{
 	width: 320px;
+}
+#form2 .invalid1{
+	color: red;
+	position: relative;
+	bottom: 140px;
+	right: 255px;
+}
+#form2 .invalid2{
+	color: red;
+	position: relative;
+	bottom: 140px;
+	left: 118px;
 }
 footer{
 	background-color: #75726C;
@@ -167,4 +182,32 @@ footer{
 .footer-bar p{
 	display: inline-block;
 	width: 45%;
+}
+
+.table{
+	background-color: whitesmoke;
+	margin: 20px 193px;
+	border: 50px solid whitesmoke;
+	top: 80px;
+	left: 400px;
+	display: block;
+}
+.board{
+	width: 100%;
+	height: 480px;
+	background-color: #75726C;
+	position: relative;
+
+}
+.car img{
+	width: 10%;
+	height: 80px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.noShow{
+	display: none;
 }
