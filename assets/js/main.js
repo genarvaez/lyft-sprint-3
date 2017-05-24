@@ -13,7 +13,7 @@ var teclas ={
 	LEFT: 37 
 };
 
-//event to validate coodenate x and y
+//event to validate coodenate x and y 
 buttonStart.addEventListener("click", function(){
 	var playLyft = document.getElementById("play-lyft");
 	if(positionX.value > 10 || positionX.value == "" ){
