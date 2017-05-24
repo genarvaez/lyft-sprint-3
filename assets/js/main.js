@@ -50,7 +50,7 @@ buttonStart.addEventListener("click", function(){
 		}
 	}
 )
-
+//Event to validate phone.
 var signButton = document.getElementById("sign-button");
 signButton.addEventListener("click", invalidPhone);
 
@@ -71,31 +71,18 @@ function carCoordinate(coordinateX, coordinateY, element){
 }
 //function for validate phone number
 function invalidPhone(){
+	var noValid = document.querySelector(".noValid");
+	var alert = document.querySelector(".alert");
+	var aceptButton = document.getElementById("aceptButton");
 	if(!(/^\+\d{2}\d{9}$/).test(inputPhone.value)){
-		var span = document.createElement("span");
-		var textSpan = document.createTextNode("Invalid Phone number. Ej: +56123456789");
-		span.classList.add("noValid");
-		span.appendChild(textSpan);
-		formBox.appendChild(span);
+		noValid.style.display = "block";
 	}
 	else{
-		formBox.removeChild(formBox.lastChild);
+		noValid.style.display = "none";
 		document.getElementById("inputPhone").value = "";
-		var newDiv = document.createElement("div");
-		var newTitle = document.createElement("p");
-		var textP = document.createTextNode("Successful sign, We'll contact you soon");
-		var aceptButton = document.createElement("input");
-		aceptButton.setAttribute("type", "button");
-		aceptButton.setAttribute("value", "OK");
-		newDiv.setAttribute("class", "alert");
-		newTitle.appendChild(textP);
-		newDiv.appendChild(newTitle);
-		content.appendChild(newDiv);
-		newDiv.appendChild(aceptButton);
+		alert.style.display = "block";
 	}
 	aceptButton.addEventListener("click", function(){
-		content.removeChild(content.lastChild)
+		alert.style.display = "none";
 	})
 }
-
-
