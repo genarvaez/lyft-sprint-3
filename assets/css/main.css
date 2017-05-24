@@ -166,12 +166,12 @@ footer{
 	text-decoration: none;
 }
 .links p{
-	padding: 30px 0 10px;
+	padding: 20px 0 10px;
 	font-size: 1.5em;
 }
 .footer-bar{
 	clear: left;
-	padding: 20px;
+	padding: 10px;
 	background-color: rgba(11, 0, 0, 0.1);
 	text-align: center;
 }
@@ -179,6 +179,11 @@ footer{
 	display: inline-block;
 	width: 45%;
 }
+.footer-bar p a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
 /*play table*/
 .table{
 	background-color: whitesmoke;
