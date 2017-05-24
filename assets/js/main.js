@@ -26,7 +26,7 @@ buttonStart.addEventListener("click", function(){
 	else{
 		playLyft.classList.add("noShow"); //add class "NoShow" to form coordinate section and hide it.
 		table.style.display="block";
-		carCoordinate((parseInt(positionY.value)*80), (parseInt(positionX.value)*10),".car img");
+		carCoordinate(((parseInt(positionY.value)-1)*80), ((parseInt(positionX.value)-1)*10),".car img");
 	}
 	//event and function to move car
 	document.addEventListener("keyup", carMoving)
